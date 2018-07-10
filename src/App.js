@@ -81,9 +81,9 @@ class App extends Component {
           </div>
           <div className="footer reception">
             <p>Reception</p>
-            <p>December 2018, 5:00pm</p>
-            <p>Some Amazingly cool Venue</p>
-            <p>Columbus, OH</p>
+            <p>December 2018, 6:00pm</p>
+            <p>St. Andrew's Catholic Church</p>
+            <p>Upper Arlington, OH</p>
           </div>
         </div>
       </div>
