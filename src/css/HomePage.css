@@ -1,0 +1,106 @@
+.countdown {
+  padding-top: 7.5%;
+  height: 20%;
+
+  color: rgb(207, 207, 207);
+  font-size: 1.5em;
+
+  font-family: "Exodus";
+}
+
+.countdown tr:nth-child(1) {
+  font-size: 2.5em;
+}
+
+.countdown tr:nth-child(2) {
+  font-family: "Christmas";
+  font-size: 1.5em;
+}
+
+.countdown td {
+  width: 20%;
+}
+
+.photo-wrap {
+  position: absolute;
+
+  top: 10%;
+
+  height: 24vw;
+  width: 18vw;
+}
+
+.photo-wrap img {
+  border-radius: 4px;
+  box-shadow: 0 0 8px 8px black inset;
+}
+
+.photo-wrap.right {
+  right: 8%;
+}
+
+.photo-wrap.left {
+  left: 8%;
+}
+
+.photo-wrap .image {
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+  box-shadow: 0px 0px 5px 3px black inset;
+  border-radius: 5px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.photo-wrap .image.baptism {
+  background-image: url('../img/Baptism.jpg');
+}
+
+.photo-wrap .image.proposal {
+  background-image: url('../img/Proposal.jpg');
+}
+
+.footer-wrap {
+  position: absolute;
+
+  bottom: 15%;
+  width: 100%;
+  height: 15%;
+}
+
+.footer {
+  position: absolute;
+
+  width: 20%;
+
+  text-align: center;
+  color: rgb(255, 255, 255, 0.75);
+
+  font-family: "Perry";
+}
+
+.footer.ceremony {
+  left: 30%;
+}
+
+.footer.reception {
+  left: 50%;
+}
+
+.footer.ceremony p:nth-child(1) {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer.reception p:nth-child(1) {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer p {
+  margin: 3px;
+  font-size: 0.75em;
+}

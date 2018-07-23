@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './HomePage.css';
+import './css/HomePage.css';
 
 class HomePage extends Component {
   render () {
@@ -26,6 +26,20 @@ class HomePage extends Component {
         </table>
         <div className="photo-wrap fixed-aspect right">
           <div className="baptism image" />
+        </div>
+        <div className="footer-wrap">
+          <div className="footer ceremony">
+            <p>Ceremony</p>
+            <p>December 2018, 2:00pm</p>
+            <p>St. Patrick's Catholic Church</p>
+            <p>Columbus, OH</p>
+          </div>
+          <div className="footer reception">
+            <p>Reception</p>
+            <p>December 2018, 6:00pm</p>
+            <p>St. Andrew's Catholic Church</p>
+            <p>Upper Arlington, OH</p>
+          </div>
         </div>
       </div>
     );

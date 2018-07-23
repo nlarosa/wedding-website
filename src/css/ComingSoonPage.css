@@ -1,0 +1,42 @@
+.coming-soon-page-content {
+  height: 100%;
+  width: 100%;
+}
+
+.nick-hacking-wrap {
+  position: relative;
+
+  top: 2.5%;
+  height: 80%;
+  width: 100%;
+
+  color: white;
+  font-family: 'SketchGothic';
+}
+
+.nick-hacking-announcement-header {
+  font-size: 3em;
+  position: relative;
+}
+
+.nick-hacking-announcement {
+  font-size: 2em;
+  position: relative;
+}
+
+.nick-hacking {
+  position: relative;
+
+  height: 18vw;
+  width: 24vw;
+
+  left: 33vw;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+  box-shadow: 0px 0px 35px 3px black inset, 0px 0px 2px 2px black;
+
+  background-image: url('../img/Hacker.jpg');
+}

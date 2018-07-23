@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
+import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
+
 import HomePage from './HomePage';
-import BridalParty from './BridalParty';
-import './App.css';
+import DetailsPage from './DetailsPage';
+import StoryPage from './StoryPage';
+import AnnaStoryPage from './AnnaStoryPage';
+import NickStoryPage from './NickStoryPage';
+import PartyPage from './PartyPage';
+import PrayersPage from './PrayersPage';
+import PhotosPage from './PhotosPage';
+import RegistryPage from './RegistryPage';
+import ComingSoonPage from './ComingSoonPage';
+
+import './css/App.css';
 
 class App extends Component {
   constructor (props) {
@@ -40,54 +52,74 @@ class App extends Component {
     }
   }
 
-  displayPage (newComponent) {
-    console.log('HELLO! WORLD!');
-  }
-
   render () {
     var timeRemainingObject = this.getTimeRemaining(this.state.countdownDistance);
 
     return (
-      <div className="content">
-        <header className="header">
-          <h1 className="title">Anna and Nick are getting married!</h1>
-          <div className="button-section">
-            <div className="details button">
-              <div className="button-text">details</div>
-            </div>
-            <div className="party button">
-              <div className="button-text" onClick={() => {this.displayPage(BridalParty)}}>
-                bridal party
+      <Router>
+        <Route render={({location}) => (
+          <div className="content">
+            <header className="header">
+              <h1 className="title">Anna and Nick are getting married!</h1>
+              <div className="button-section">
+                <NavLink exact to="/" activeClassName="selected">
+                  <div className="home button">
+                    <div className="button-text">home</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/details" activeClassName="selected">
+                  <div className="details button">
+                    <div className="button-text">details</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/story" activeClassName="selected">
+                  <div className="details button">
+                    <div className="button-text">our story</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/party" activeClassName="selected">
+                  <div className="party button">
+                    <div className="button-text">bridal party</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/prayers" activeClassName="selected">
+                  <div className="prayer button">
+                    <div className="button-text">prayers</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/photos" activeClassName="selected">
+                  <div className="photos button">
+                    <div className="button-text">photos</div>
+                  </div>
+                </NavLink>
+                <NavLink to="/registry" activeClassName="selected">
+                  <div className="registry button">
+                    <div className="button-text">registry</div>
+                  </div>
+                </NavLink>
               </div>
-            </div>
-            <div className="prayer button">
-              <div className="button-text">prayers</div>
-            </div>
-            <div className="registry button">
-              <div className="button-text">photos</div>
-            </div>
-            <div className="registry button">
-              <div className="button-text">registry</div>
+            </header>
+            <div className="page-content">
+              <CSSTransition key={location.key} classNames="fade" timeout={1000}>
+                <Switch>
+                  <Route exact path='/' render={() => (
+                    <HomePage timeRemainingObject={timeRemainingObject} />
+                  )} />
+                  <Route path='/details' component={DetailsPage}/>
+                  <Route path='/story' component={StoryPage}/>
+                  <Route path='/anna' component={AnnaStoryPage}/>
+                  <Route path='/nick' component={NickStoryPage}/>
+                  <Route path='/party' component={ComingSoonPage}/>
+                  <Route path='/prayers' component={ComingSoonPage}/>
+                  <Route path='/photos' component={ComingSoonPage}/>
+                  <Route path='/registry' component={ComingSoonPage}/>
+                </Switch>
+              </CSSTransition>
             </div>
           </div>
-        </header>
-        <HomePage timeRemainingObject={timeRemainingObject} />
-        <div className="footer-wrap">
-          <div className="footer ceremony">
-            <p>Ceremony</p>
-            <p>December 2018, 2:00pm</p>
-            <p>St. Patrick's Catholic Church</p>
-            <p>Columbus, OH</p>
-          </div>
-          <div className="footer reception">
-            <p>Reception</p>
-            <p>December 2018, 6:00pm</p>
-            <p>St. Andrew's Catholic Church</p>
-            <p>Upper Arlington, OH</p>
-          </div>
-        </div>
-      </div>
-    );
+        )} />
+      </Router>
+    )
   }
 }
 

@@ -1,0 +1,42 @@
+.story-page-content {
+  height: 100%;
+  width: 100%;
+}
+
+.avatar-wrap {
+  position: relative;
+
+  top: 20%;
+  height: 80%;
+  width: 35%;
+
+  left: 32.5%;
+}
+
+.avatar {
+  height: 12vw;
+  width: 12vw;
+
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+  box-shadow: 0px 0px 35px 3px black inset, 0px 0px 2px 2px black;
+}
+
+.avatar:hover {
+  box-shadow: 0px 0px 50px 10px black inset, 0px 0px 2px 2px black;
+  cursor: pointer;
+}
+
+.avatar.anna {
+  float: left;
+  background-image: url('../img/Anna.png');
+}
+
+.avatar.nick {
+  float: right;
+  background-image: url('../img/Nick.jpg');
+}

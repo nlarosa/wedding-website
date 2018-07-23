@@ -1,0 +1,16 @@
+.details-page-content {
+  height: 100%;
+  width: 100%;
+
+  font-family: "Christmas";
+}
+
+.centered-header {
+  font-size: 3em;
+  font-family: "German";
+}
+
+.details-page-content p {
+  font-family: "Foglihten";
+}
+
