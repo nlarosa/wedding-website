@@ -118,3 +118,43 @@
 
   text-align: center;
 }
+
+@media screen and (orientation: portrait) {
+  .title {
+    top: 50%;
+    font-size: 2em;
+  }
+
+  .button-section {
+    height: 20%;
+    bottom: 15%;
+
+    font-size: .75em;
+  }
+
+  .button-section .button {
+    width: 20%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    top: 50%;
+    font-size: 2em;
+  }
+
+  .button-section {
+    height: 35%;
+    bottom: 15%;
+
+    font-size: .8em;
+  }
+
+  .button-section .button {
+    width: 13%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}

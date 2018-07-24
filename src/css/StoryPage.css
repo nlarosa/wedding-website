@@ -40,3 +40,15 @@
   float: right;
   background-image: url('../img/Nick.jpg');
 }
+
+@media screen and (orientation: portrait) {
+  .avatar-wrap {
+    width: 75%;
+    left: 12.5%;
+  }
+
+  .avatar-wrap .avatar {
+    height: 25vw;
+    width: 25vw;
+  }
+}
