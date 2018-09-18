@@ -6,6 +6,8 @@
 }
 
 .centered-header {
+  padding-top: 10px;
+
   font-size: 3em;
   font-family: "German";
 }
@@ -14,3 +16,42 @@
   font-family: "Foglihten";
 }
 
+.ceremony-content, .reception-content, .accomodations-content {
+  cursor: pointer;
+}
+
+.ceremony-content:hover, .reception-content:hover {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ceremony-content:hover:after, .reception-content:hover:after {
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 75%;
+
+  color: rgba(255, 255, 255, 0.9);
+  content: 'Click to open location on Google Maps!';
+}
+
+.accomodation-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.accomodation-content:hover {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 1024px) {
+  .third {
+    top: 5px;
+    width: 30%;
+    padding: 1.5%;
+
+    display: inline-block;
+
+    float: left;
+  }
+}

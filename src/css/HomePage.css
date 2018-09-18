@@ -1,3 +1,8 @@
+.homepage-content {
+  width: 100%;
+  height: 100%;
+}
+
 .countdown {
   padding-top: 7.5%;
   height: 20%;
@@ -8,12 +13,12 @@
 }
 
 .countdown tr:nth-child(1) {
-  font-size: 2.5em;
+  font-size: 4em;
 }
 
 .countdown tr:nth-child(2) {
   font-family: "Christmas";
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .countdown td {
@@ -27,6 +32,8 @@
 
   height: 24vw;
   width: 18vw;
+
+  box-shadow: 0px 0px 2px 2px black
 }
 
 .photo-wrap img {
@@ -48,7 +55,6 @@
 
   z-index: 1;
   box-shadow: 0px 0px 5px 3px black inset;
-  border-radius: 5px;
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -79,6 +85,8 @@
   color: rgb(255, 255, 255, 0.75);
 
   font-family: "Perry";
+
+  cursor: pointer;
 }
 
 .footer.ceremony {
@@ -102,6 +110,20 @@
 .footer p {
   margin: 3px;
   font-size: 0.75em;
+}
+
+.footer.ceremony:hover, .footer.reception:hover {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer.ceremony:hover:after, .footer.reception:hover:after {
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 75%;
+
+  color: rgba(255, 255, 255, 0.9);
+  content: 'Click to open location on Google Maps!';
 }
 
 @media screen and (orientation: portrait) {

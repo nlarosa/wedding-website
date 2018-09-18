@@ -3,6 +3,7 @@ import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-do
 import { CSSTransition } from 'react-transition-group';
 
 import HomePage from './HomePage';
+import RsvpPage from './RsvpPage';
 import DetailsPage from './DetailsPage';
 import StoryPage from './StoryPage';
 import AnnaStoryPage from './AnnaStoryPage';
@@ -105,14 +106,15 @@ class App extends Component {
                   <Route exact path='/' render={() => (
                     <HomePage timeRemainingObject={timeRemainingObject} />
                   )} />
+                  <Route path='/rsvp' component={RsvpPage}/>
                   <Route path='/details' component={DetailsPage}/>
                   <Route path='/story' component={StoryPage}/>
                   <Route path='/anna' component={AnnaStoryPage}/>
                   <Route path='/nick' component={NickStoryPage}/>
                   <Route path='/party' component={ComingSoonPage}/>
-                  <Route path='/prayers' component={ComingSoonPage}/>
+                  <Route path='/prayers' component={PrayersPage}/>
                   <Route path='/photos' component={ComingSoonPage}/>
-                  <Route path='/registry' component={ComingSoonPage}/>
+                  <Route path='/registry' component={RegistryPage}/>
                 </Switch>
               </CSSTransition>
             </div>
