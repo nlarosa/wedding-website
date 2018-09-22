@@ -54,6 +54,7 @@
 }
 
 .page-content .details-page-content,
+  .rsvp-page-content,
   .story-page-content,
   .party-page-content,
   .prayers-page-content,
@@ -172,5 +173,11 @@
 @media screen and (max-width: 800px) {
   .button-section {
     font-size: .6em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.6em;
   }
 }

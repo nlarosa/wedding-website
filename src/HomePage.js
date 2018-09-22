@@ -31,7 +31,7 @@ class HomePage extends Component {
         <Route render={({location}) => (
           <div className="homepage-content">
             <div className={this.state.rsvpPage ?
-              "default-homepage-content animated bounceOut" : "default-homepage-content animated"}
+              "default-homepage-content animated fadeOutDown" : "default-homepage-content animated"}
               hidden={!this.state.defaultContent}>
               <div className="photo-wrap fixed-aspect left">
                 <div className="proposal image" />
@@ -50,13 +50,13 @@ class HomePage extends Component {
                   <td>seconds</td>
                 </tr>
               </table>
-              {/*<DelayLink to="/rsvp" delay={1000} onDelayEnd={(e, to) => {
-                console.log('Hello world!');
-              }}>
-                <div className="rsvpButton" onClick={this.innerNavigate}>
-                  RSVP Here!
-                </div>
-              </DelayLink>*/}
+              <div className="rsvp-button-wrap">
+                <DelayLink to="/rsvp" delay={1000} onDelayEnd={(e, to) => {}}>
+                  <div onClick={this.innerNavigate}>
+                    RSVP Here!
+                  </div>
+                </DelayLink>
+              </div>
               <div className="photo-wrap fixed-aspect right">
                 <div className="baptism image" />
               </div>

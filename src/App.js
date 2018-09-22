@@ -113,7 +113,7 @@ class App extends Component {
                   <Route path='/nick' component={NickStoryPage}/>
                   <Route path='/party' component={ComingSoonPage}/>
                   <Route path='/prayers' component={PrayersPage}/>
-                  <Route path='/photos' component={ComingSoonPage}/>
+                  <Route path='/photos' component={PhotosPage}/>
                   <Route path='/registry' component={RegistryPage}/>
                 </Switch>
               </CSSTransition>

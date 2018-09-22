@@ -68,6 +68,42 @@
   background-image: url('../img/Proposal.jpg');
 }
 
+.rsvp-button-wrap a {
+  position: relative;
+  width: 15em;
+
+  text-decoration: none;
+  color: white;
+}
+
+.rsvp-button-wrap a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.rsvp-button-wrap:hover {
+  background: rgb(215, 215, 215);
+  box-shadow: inset 0 0 10px black;
+}
+
+.rsvp-button-wrap {
+  position: relative;
+  height: 3em;
+  line-height: 3em;
+
+  left: 42.5%;
+  width: 15%;
+
+  border-radius: 5px;
+  background-color: rgba(17, 0, 255, 0.5);
+
+  cursor: pointer;
+
+  font-family: 'Foglihten';
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
 .footer-wrap {
   position: absolute;
 

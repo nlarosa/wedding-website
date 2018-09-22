@@ -47,6 +47,17 @@
   font-family: 'Foglihten';
 }
 
+.submit.inactive {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submit.inactive:hover {
+  background: rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 0;
+  color: white;
+  cursor: default;
+}
+
 .submit.again {
   width: 15em;
 }

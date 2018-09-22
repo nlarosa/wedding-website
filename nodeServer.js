@@ -6,6 +6,7 @@ const nano = require('nano')('http://localhost:5984');
 const app = express()
 
 const prayersDB = nano.db.use('prayers');
+const rsvpsDB = nano.db.use('rsvps');
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './build')))
@@ -27,4 +28,15 @@ app.put('/prayer/', (req, res) => {
   }
 });
 
-app.listen(8443, () => console.log('Example app listening on port 8443!'))
+app.put('/rsvp/', (req, res) => {
+  if (req.body.name || req.body.guests.length) {
+    rsvpsDB.insert(
+      Object.assign(req.body, { time: new Date(Date.now()).toLocaleString() })
+    )
+    .then((body) => {
+      res.sendStatus(200)
+    });
+  }
+});
+
+app.listen(8443, () => console.log('Listening on port 8443!'))
