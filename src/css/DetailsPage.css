@@ -12,26 +12,54 @@
   font-family: "German";
 }
 
-.details-page-content p {
-  font-family: "Foglihten";
-}
-
-.ceremony-content, .reception-content, .accomodations-content {
-  cursor: pointer;
-}
-
-.ceremony-content:hover, .reception-content:hover {
+.ceremony-content, .reception-content, .accomodations-content, .things-to-do-content {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.1);
+
+  margin: 5px;
+  padding: 5px;
+
+  display: inline-block;
+  width: 100%;
 }
 
-.ceremony-content:hover:after, .reception-content:hover:after {
-  font-family: "Georgia";
-  font-style: italic;
-  font-size: 75%;
+.accomodations-content, .things-to-do-content {
+  font-family: 'Georgia';
+}
 
-  color: rgba(255, 255, 255, 0.9);
-  content: 'Click to open location on Google Maps!';
+.details-church-photo {
+  z-index: 1;
+  box-shadow: 0px 0px 5px 3px black inset;
+
+  display: inline-block;
+
+  height: 12vw;
+  width: 15vw;
+
+  background-image: url('../img/StPatricks.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  margin-top: 20px;
+}
+
+.st-patricks {
+  background-image: url('../img/StPatricks.jpg');
+}
+
+.st-andrews {
+  background-image: url('../img/StAndrews.jpg');
+}
+
+.right-text-content {
+  display: inline-block;
+  width: 45%;
+
+  margin-right: 5%;
+  float: right;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .accomodation-content {
@@ -39,15 +67,44 @@
   padding-bottom: 5px;
 }
 
-.accomodation-content:hover {
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
+.thing-to-do {
+  margin-left: 5%;
+  width: 90%;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  border-bottom: 1px solid gray;
 }
 
-@media screen and (min-width: 1024px) {
-  .third {
+.thing-to-do.last {
+  border: 0;
+}
+
+.accomodation-content:hover, .thing-to-do:hover {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.details-column {
+  width: 40%;
+}
+
+.details-column.right {
+  margin-right: 9.5%;
+  float: right;
+}
+
+.details-column.left {
+  margin-left: 7.5%;
+  float: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .details-column {
     top: 5px;
-    width: 30%;
+    width: 97.5%;
     padding: 1.5%;
 
     display: inline-block;

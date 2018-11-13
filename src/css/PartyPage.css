@@ -1,0 +1,126 @@
+.party-page-content {
+  height: 100%;
+  width: 100%;
+}
+
+.party-page-content .scrollable-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.party-page-content .party-wrap {
+  display: relative;
+  width: 100%;
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.party-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.party-item {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+
+  text-align: center;
+}
+
+.party-item hr {
+  border-top: 1px solid gray;
+  border-bottom: 0;
+}
+
+.party-item:nth-child(odd) {
+  margin-left: 9%;
+  margin-right: 0.5%;
+}
+
+.party-item:nth-child(even) {
+  margin-right: 9%;
+  margin-left: 0.5%;
+}
+
+.party-wrap.groomsmen-wrap {
+  float: right;
+}
+
+.bridal-avatar {
+  height: 8vw;
+  width: 8vw;
+
+  border-radius: 50%;
+  margin-top: 10px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+  box-shadow: 0px 0px 35px 3px black inset, 0px 0px 2px 2px black;
+
+  display: inline-block;
+}
+
+.bridal-avatar.anna {
+  background-image: url('../img/AnnaFace.png');
+}
+
+.bridal-avatar.jamie {
+  background-image: url('../img/Jamie.jpg');
+}
+
+.bridal-avatar.federico {
+  background-image: url('../img/Federico.jpg');
+}
+
+.bridal-avatar.orrin {
+  background-image: url('../img/Orrin.jpg');
+}
+
+.bridal-avatar.carl {
+  background-image: url('../img/Carl.jpg');
+}
+
+.bridal-avatar.sarah {
+  background-image: url('../img/Sarah.jpg');
+}
+
+.bridal-avatar.laura {
+  background-image: url('../img/Laura.jpg');
+}
+
+.bridal-avatar.sean {
+  background-image: url('../img/Sean.jpg');
+}
+
+.bridal-avatar.curt {
+  background-image: url('../img/Curt.jpg');
+}
+
+.bridal-avatar.chloe {
+  background-image: url('../img/Chloe.jpg');
+}
+
+.bridal-avatar.katie {
+  background-image: url('../img/Katie.jpg');
+}
+
+.bridal-avatar.justin {
+  background-image: url('../img/Justin.jpg');
+}
+
+.bridal-avatar.marissa {
+  background-image: url('../img/Marissa.jpg');
+}
+
+.bridal-avatar.ellerie {
+  background-image: url('../img/Ellerie.jpg');
+}
+
+.bridal-avatar.kayla {
+  background-image: url('../img/Kayla.jpg');
+}

@@ -111,7 +111,7 @@ class App extends Component {
                   <Route path='/story' component={StoryPage}/>
                   <Route path='/anna' component={AnnaStoryPage}/>
                   <Route path='/nick' component={NickStoryPage}/>
-                  <Route path='/party' component={ComingSoonPage}/>
+                  <Route path='/party' component={PartyPage}/>
                   <Route path='/prayers' component={PrayersPage}/>
                   <Route path='/photos' component={PhotosPage}/>
                   <Route path='/registry' component={RegistryPage}/>

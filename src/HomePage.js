@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { OpenCeremonyMaps, OpenReceptionMaps } from './utils';
+import { OpenLink } from './utils';
 import './css/HomePage.css';
 
 import DelayLink from './DelayLink';
@@ -61,13 +61,13 @@ class HomePage extends Component {
                 <div className="baptism image" />
               </div>
               <div className="footer-wrap">
-                <div className="footer ceremony" onClick={OpenCeremonyMaps}>
+                <div className="footer ceremony" onClick={() => OpenLink('https://goo.gl/maps/mSDZ32e7min')}>
                   <p>Ceremony</p>
                   <p>December 15th, 2018, 2:00pm</p>
                   <p>St. Patrick's Catholic Church</p>
                   <p>Columbus, OH</p>
                 </div>
-                <div className="footer reception" onClick={OpenReceptionMaps}>
+                <div className="footer reception" onClick={() => OpenLink('https://goo.gl/maps/fJD92C6vGVr')}>
                   <p>Reception</p>
                   <p>December 15th, 2018, 6:00pm</p>
                   <p>St. Andrew's Catholic Church</p>
